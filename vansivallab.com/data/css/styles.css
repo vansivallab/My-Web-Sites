@@ -1,0 +1,79 @@
+/*styles.css*/
+*.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body {
+	text-align: center;
+	margin-top: 15%;
+	background-image: url('grey.png');
+	background-repeat: repeat;
+}
+
+h1 {
+	font-family: 'Cabin', sans-serif;
+    text-align: center;
+    
+    font-size: 4.5em;
+    color: #585C60;
+}
+
+a {
+	text-decoration: none;
+}
+
+#toolbar{
+    width: 20em;
+    margin: auto;
+    margin-top: 2em;
+}
+
+#toolbar .button{
+    width: 33.3%;
+    float: left;
+}
+
+#toolbar .button a {
+    display: inline-block;
+    padding: 12px 16px;
+    background-color: #F1F2F3;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px #aaa;
+    font-weight: bold;
+    color: #888888;
+    cursor: pointer;    
+	
+	font-family: 'Cabin', sans-serif;
+    text-align: center;
+	
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#toolbar .button a:hover {
+    background-color: #0174C6;
+    color: #ffffff;
+}
+
+#toolbar .button.UC a:hover {
+    background-color: #E61036;
+    color: #ffffff;
+}
+
+#toolbar .button a:active {
+    position: relative;
+    top: 1px;
+    box-shadow: inset 0px 0px 6px #000000;        
+}*/

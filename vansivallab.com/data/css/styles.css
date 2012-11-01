@@ -1,5 +1,5 @@
 /*styles.css*/
-*.unselectable {
+.unselectable {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -8,28 +8,55 @@
 	user-select: none;
 }
 
+html {
+	height: 100%;
+	width: 100%;
+}
+
 body {
-	text-align: center;
-	margin-top: 15%;
-	background-image: url('grey.png');
+	height: 100%;
+	width: 100%;
+	background-image: url('whitey.png');
 	background-repeat: repeat;
 }
 
 h1 {
 	font-family: 'Cabin', sans-serif;
-    text-align: center;
-    
-    font-size: 4.5em;
-    color: #585C60;
+    font-size: 2.5em;
+    /*color: #585C60;*/
+	color: white;
 }
 
 a {
 	text-decoration: none;
 }
 
-#toolbar{
+#header {
+	position: relative;
+	min-height: 47%;
+	height: 47%;
+	width: 100%;
+	
+	background-image: url('header.png');
+	/*border-bottom: .4em solid gray;*/
+	box-shadow: 1px 1px 6px #aaa;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#header #toolbar{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10px;
+	background-color: gray;
+}
+
+/*#toolbar{
     width: 20em;
-    margin: auto;
+    margin-left: 2%;
     margin-top: 2em;
 }
 
@@ -70,10 +97,78 @@ a {
 #toolbar .button.UC a:hover {
     background-color: #E61036;
     color: #ffffff;
+}*/
+
+#toolpicContainer {
+	float: right;
+	padding-right: 2em;
+	padding-top: 2em;
+	/*padding-right: 15%;*/
+}
+
+.toolpic {
+	position: relative;
+	width: 10em;
+	height: 14em;
+	display: inline-block;
+	margin-left: 1em;
+	
+	/*border: .1em solid gray;*/
+	box-shadow: 1px 1px 6px #aaa;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.toolpic img {
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.toolpic h2 {
+	position: absolute;
+	bottom: 0px;
+	padding: 1px 1px;
+	background-color: gray;
+	width: 100%;
+	text-align: center;
+	
+	font-family: 'Cabin', sans-serif;
+    font-size: 2em;
+    color: #585C60;
+	
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	-o-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.toolpic:hover  h2{
+	font-size: 2.5em;
+}
+
+.button:active {
+	position: relative;
+    top: 0.25em;
 }
 
 #toolbar .button a:active {
-    position: relative;
-    top: 1px;
     box-shadow: inset 0px 0px 6px #000000;        
-}*/
+}

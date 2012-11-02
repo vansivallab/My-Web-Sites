@@ -6,6 +6,7 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+    cursor: pointer;
 }
 
 html {
@@ -16,8 +17,13 @@ html {
 body {
 	height: 100%;
 	width: 100%;
-	background-image: url('whitey.png');
-	background-repeat: repeat;
+	/*background-image: url('whitey.png');*/
+	background: url('background.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
 }
 
 h1 {
@@ -31,144 +37,81 @@ a {
 	text-decoration: none;
 }
 
-#header {
-	position: relative;
-	min-height: 47%;
-	height: 47%;
+#headerBack {
+	position: absolute;
+	top: 25%;
 	width: 100%;
 	
-	background-image: url('header.png');
+	background-image: url('frost3.png');
+	/*background: #010916;*/
 	/*border-bottom: .4em solid gray;*/
-	box-shadow: 1px 1px 6px #aaa;
+	-webkit-box-shadow: 0 4px 12px #000;
+	-moz-box-shadow: 0 4px 12px #000;
+	-o-box-shadow: 0 4px 12px #000;
+	box-shadow: 0 4px 12px #000;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-#header #toolbar{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 10px;
-	background-color: gray;
+#header {
+	position: relative;
+	max-width:100em;
+	width: 62%;
+	min-width: 30em;
+	margin: auto;
+	
 }
 
-/*#toolbar{
+#toolbar{
     width: 20em;
-    margin-left: 2%;
-    margin-top: 2em;
+	float: right;
+	padding-bottom: 10px
 }
 
-#toolbar .button{
+/*#toolbar .button{
     width: 33.3%;
     float: left;
 }
 
-#toolbar .button a {
-    display: inline-block;
-    padding: 12px 16px;
-    background-color: #F1F2F3;
-    border-radius: 5px;
-    box-shadow: 1px 1px 6px #aaa;
-    font-weight: bold;
-    color: #888888;
-    cursor: pointer;    
-	
-	font-family: 'Cabin', sans-serif;
-    text-align: center;
-	
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+.button a{
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 2px #6e6e6e;
+  -moz-box-shadow: 0px 0px 2px #6e6e6e;
+  text-shadow: 1px 1px 3px #666666;
 }
 
-#toolbar .button a:hover {
-    background-color: #0174C6;
-    color: #ffffff;
-}
-
-#toolbar .button.UC a:hover {
-    background-color: #E61036;
-    color: #ffffff;
+.button a:hover {
+  background: #cccccc;
 }*/
 
-#toolpicContainer {
-	float: right;
-	padding-right: 2em;
-	padding-top: 2em;
-	/*padding-right: 15%;*/
-}
-
-.toolpic {
-	position: relative;
-	width: 10em;
-	height: 14em;
-	display: inline-block;
-	margin-left: 1em;
+.link {
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 	
-	/*border: .1em solid gray;*/
-	box-shadow: 1px 1px 6px #aaa;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-o-border-radius: 4px;
-	border-radius: 4px;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.toolpic img {
-	width: 100%;
-	height: 100%;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-o-border-radius: 4px;
-	border-radius: 4px;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
+.link:hover {
+  color: #b1a1fa;
 }
 
-.toolpic h2 {
-	position: absolute;
-	bottom: 0px;
-	padding: 1px 1px;
-	background-color: gray;
-	width: 100%;
-	text-align: center;
-	
-	font-family: 'Cabin', sans-serif;
-    font-size: 2em;
-    color: #585C60;
-	
-	-webkit-border-radius: 0 0 4px 4px;
-	-moz-border-radius: 0 0 4px 4px;
-	-o-border-radius: 0 0 4px 4px;
-	border-radius: 0 0 4px 4px;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
+.vertDivider {
+	font-size: 20px;
 }
 
-.toolpic:hover  h2{
-	font-size: 2.5em;
-}
-
-.button:active {
-	position: relative;
-    top: 0.25em;
-}
-
-#toolbar .button a:active {
-    box-shadow: inset 0px 0px 6px #000000;        
+#toolbar a {
+    display: inline-block;
 }

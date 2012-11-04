@@ -3,20 +3,37 @@
 <head>
     <title>Vansi Vallabhaneni</title>
 	<link href="data/css/reset.css" type="text/css" rel="stylesheet" />
-	<link href="data/css/styles.css" type="text/css" rel="stylesheet" />
+	<link href="data/css/home.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 	<div id="headerBack">
 	<div id="header">
-		<a href=""><h1 class="unselectable">Vansi</h1></a>
+		<a id="homeNav" href="#"><h1 class="unselectable">Vansi</h1></a>
 		<div class="unselectable" id="toolbar">
-			<a href="#projects" class="link" id="projects">Projects</a>
+			<a href="#projects" class="link" id="projectsNav">Projects</a>
 			<span class="vertDivider">|</span>
-			<a href="#resume" class="link" id="resume">Resume</a>
+			<a href="#resume" class="link" id="resumeNav">Resume</a>
 			<span class="vertDivider">|</span>
-			<a href="#about" class="link lastElem" id="about">About Me</a>
+			<a href="#about" class="link lastElem" id="aboutNav">About Me</a>
 		</div>
+	</div>	
 	</div>
+	
+	<!--Page Views-->
+	<div class="view" id="projectsView">
+	PROJECT!
+	</div>
+	
+	<div class="view" id="resumeView">
+	
+	</div>
+	
+	<div class="view" id="aboutView">
+	
 	</div>
 </body>
+
+<script type="text/javascript" src="data/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="data/js/view.js"></script>
+<script type="text/javascript" src="data/js/main.js"></script>
 </html>

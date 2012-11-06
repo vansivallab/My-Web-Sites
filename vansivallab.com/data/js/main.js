@@ -1,59 +1,48 @@
 //main.js
 $(function() {
 var globalView = {
-	bodyJSelect: $('body'),
-	navJSelect: $('#headerBack'),
-	homeNavJSelect: $('#homeNav'),
-	projectsNavJSelect: $('#projectsNav'),
-	projectsViewJSelect: $('#projectsView'),
-	resumeNavJSelect: $('#resumeNav'),
-	resumeViewJSelect: $('#resumeView'),
-	aboutNavJSelect: $('#aboutNav'),
-	aboutViewJSelect: $('#aboutView'),
+	$body: $('body'),
+	$navBar: $('#headerBack'),
 	homeView: undefined,
 	projectView: undefined,
 	resumeView: undefined,
 	aboutView: undefined,
-	currView: this.homeView
+	currView: this.homeView,
+	views: []
 };
 
 function initViews() {
-	globalView.currView = globalView.homeView = new View(globalView, globalView.homeNavJSelect, undefined, '25%');
-	globalView.projectsView = new View(globalView, globalView.projectsNavJSelect, globalView.projectsViewJSelect, '0');
-	globalView.resumeView = new View(globalView, globalView.resumeNavJSelect, globalView.resumeViewJSelect, '0');
-	globalView.aboutView = new View(globalView, globalView.aboutNavJSelect, globalView.aboutViewJSelect, '0');
+	globalView.currView = globalView.homeView = new View(globalView, '#', undefined, '25%');
+	globalView.projectsView = new View(globalView, '#projects', $('#projectsView'), '0');
+	globalView.resumeView = new View(globalView, '#resume', $('#resumeView'), '0');
+	globalView.aboutView = new View(globalView, '#about', $('#aboutView'), '0');
+	globalView.views = [globalView.homeView, globalView.projectsView, globalView.resumeView, globalView.aboutView];
 };
 initViews();
 
-//events
-
-globalView.projectsNavJSelect.click(function() {
+function navigateTo(hash) {
+	if(hash ===  '') {
+		return globalView.homeView.show();
+	}
 	
-});
-
-globalView.resumeNavJSelect.click(function() {
-	toResumeView();
-});
-
-globalView.aboutNavJSelect.click(function() {
-	toAboutView();
-});
-
-function toHomeView() {
-	this.globalView.currView.hide();
-	this.globalView.navJSelect.css('top', '25%');
-	this.globalView.currView = this;
+	for(var v = 0; v < globalView.views.length; v++) {
+		var view = globalView.views[v];
+		if(view.hash === hash) {
+			return view.show();
+		}
+	}
 }
 
-function toProjectsView() {
-
+if (window.location.hash === '') {
+	//window.location.hash = globalView.homeView.hash;
+} 
+else {
+	navigateTo(window.location.hash);
 }
 
-function toResumeView() {
+window.onhashchange = function() {
+	// actually perform the navigation
+	navigateTo(window.location.hash);
+};
 
-}
-
-function toAboutView() {
-
-}
 });

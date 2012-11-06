@@ -1,27 +1,23 @@
 //view.js
-function View(globalView, thisNavJSelect, viewJSelect, navBarTop, navBarPosProp) {
+function View(globalView, hash, $view, navBarTop) {
 	this.globalView = globalView;
-	this.navJSelect = thisNavJSelect;
-	this.viewJSelect = viewJSelect;
+	this.hash = hash;
+	this.$view = $view;
 	this.navBarTop = navBarTop; //css position in string
-	this.navBarPosProp = navBarPosProp; //static, absolute, etc in string
-	
-	this.navJSelect.click(function() {this.show();}.bind(this));
 }
 
 View.prototype.show = function() {
 	if(this.globalView.currView) {this.globalView.currView.hide();}
-	if(this.viewJSelect) {
-		console.log(this.viewJSelect);
-		this.viewJSelect.css('display', 'block');
+	if(this.$view) {
+		//console.log(this.view$);
+		this.$view.css('display', 'block');
 	}
-	this.globalView.navJSelect.css('top', this.navBarTop+'');
-	//this.globalView.navJSelect.css('position', this.navBarPosProp+'');
+	this.globalView.$navBar.css('top', this.navBarTop+'');
 	this.globalView.currView = this;
 };
 
 View.prototype.hide = function() {
-	if(this.viewJSelect) {
-		this.viewJSelect.css('display', 'none');
+	if(this.$view) {
+		this.$view.css('display', 'none');
 	}
 };

@@ -34,7 +34,7 @@ function navigateTo(hash) {
 }
 
 if (window.location.hash === '') {
-	//window.location.hash = globalView.homeView.hash;
+	window.location.hash = globalView.homeView.hash;
 } 
 else {
 	navigateTo(window.location.hash);

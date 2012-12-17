@@ -45,4 +45,19 @@ window.onhashchange = function() {
 	navigateTo(window.location.hash);
 };
 
+$('.navLink').on('click', function(e) {
+	e.preventDefault();
+	var hash = $(this).attr('href');
+	//console.log("link clicked "+hash);
+	navigateTo(hash);
 });
+
+});
+
+
+var util = {};
+
+util.exists = function(obj) {
+	return obj !== null && obj !== undefined;
+};
+

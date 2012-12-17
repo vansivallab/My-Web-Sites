@@ -2,7 +2,7 @@
 $(function() {
 var globalView = {
 	$body: $('body'),
-	$navBar: $('#headerBack'),
+	$navBar: $('#header'),
 	homeView: undefined,
 	projectView: undefined,
 	resumeView: undefined,

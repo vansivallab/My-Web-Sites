@@ -12,10 +12,10 @@ var globalView = {
 };
 
 function initViews() {
-	globalView.currView = globalView.homeView = new View(globalView, '#', undefined, '25%');
-	globalView.projectsView = new View(globalView, '#projects', $('#projectsView'), '0');
-	globalView.resumeView = new View(globalView, '#resume', $('#resumeView'), '0');
-	globalView.aboutView = new View(globalView, '#about', $('#aboutView'), '0');
+	globalView.currView = globalView.homeView = new View(globalView, '#', undefined, undefined, '25%');
+	globalView.projectsView = new View(globalView, '#projects', $('#projectsView'), $('#projectsButton'), '0');
+	globalView.resumeView = new View(globalView, '#resume', $('#resumeView'), $('#resumeButton'), '0');
+	globalView.aboutView = new View(globalView, '#about', $('#aboutView'), $('#aboutButton'), '0');
 	globalView.views = [globalView.homeView, globalView.projectsView, globalView.resumeView, globalView.aboutView];
 };
 initViews();

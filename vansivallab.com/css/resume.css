@@ -1,0 +1,87 @@
+/*resume.css*/
+
+#resume {
+	position: relative;
+	width: 816px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 125px;
+}
+
+#resumeDownload {
+	position: fixed;
+	display: block;
+	top: 91px;	
+}
+
+.ft0{font: bold 21px 'Calibri';line-height: 25px;}
+.ft1{font: bold 17px 'Calibri';line-height: 21px;}
+.ft2{font: bold 13px 'Calibri';line-height: 15px;}
+.ft3{font: 13px 'Calibri';line-height: 15px;}
+.ft4{font: bold 14px 'Calibri';text-decoration: underline;line-height: 17px;}
+.ft5{font: bold 14px 'Calibri';line-height: 17px;}
+.ft6{font: italic 13px 'Calibri';line-height: 15px;}
+.ft7{font: italic 13px 'Calibri';line-height: 13px;}
+.ft8{font: bold 12px 'Symbol';line-height: 15px;}
+.ft9{font: bold 12px 'Calibri';margin-left: 18px;line-height: 14px;}
+.ft10{font: 12px 'Calibri';line-height: 14px;}
+.ft11{font: 11px 'Calibri';line-height: 13px;}
+.ft12{font: bold 14px 'Calibri';line-height: 13px;}
+.ft13{font: 1px 'Calibri';line-height: 1px;}
+.ft14{font: 13px 'Calibri';margin-left: 18px;line-height: 15px;}
+.ft15{font: 13px 'Calibri';margin-left: 18px;line-height: 16px;}
+.ft16{font: 13px 'Calibri';line-height: 16px;}
+.ft17{font: bold 14px 'Calibri';line-height: 15px;}
+
+.p0{text-align: left;padding-left: 325px;margin-top: 0px;margin-bottom: 0px;}
+.p1{text-align: left;padding-left: 349px;margin-top: 1px;margin-bottom: 0px;}
+.p2{text-align: left;padding-left: 381px;margin-top: 1px;margin-bottom: 0px;}
+.p3{text-align: left;padding-left: 253px;margin-top: 1px;margin-bottom: 0px;}
+.p4{text-align: left;padding-left: 84px;margin-top: 27px;margin-bottom: 0px;}
+.p5{text-align: left;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p6{text-align: right;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p7{text-align: left;padding-left: 132px;margin-top: 1px;margin-bottom: 0px;}
+.p8{text-align: left;padding-left: 132px;margin-top: 0px;margin-bottom: 0px;}
+.p9{text-align: justify;padding-left: 156px;padding-right: 87px;margin-top: 2px;margin-bottom: 0px;text-indent: -24px;}
+.p10{text-align: justify;padding-left: 132px;margin-top: 1px;margin-bottom: 0px;}
+.p11{text-align: justify;padding-left: 132px;margin-top: 0px;margin-bottom: 0px;}
+.p12{text-align: right;padding-right: 84px;margin-top: 6px;margin-bottom: 0px;}
+.p13{text-align: right;padding-right: 2px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p14{text-align: left;padding-left: 48px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p15{text-align: right;padding-right: 3px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p16{text-align: justify;padding-left: 156px;padding-right: 104px;margin-top: 1px;margin-bottom: 0px;text-indent: -24px;}
+.p17{text-align: justify;padding-left: 132px;margin-top: 3px;margin-bottom: 0px;}
+.p18{text-align: left;padding-left: 156px;padding-right: 108px;margin-top: 3px;margin-bottom: 0px;text-indent: -24px;}
+.p19{text-align: left;padding-left: 132px;padding-right: 161px;margin-top: 4px;margin-bottom: 0px;}
+.p20{text-align: left;padding-left: 132px;padding-right: 175px;margin-top: 20px;margin-bottom: 0px;}
+
+.td0{padding: 0px;margin: 0px;width: 405px;vertical-align: bottom;}
+.td1{padding: 0px;margin: 0px;width: 192px;vertical-align: bottom;}
+.td2{padding: 0px;margin: 0px;width: 546px;vertical-align: bottom;}
+.td3{padding: 0px;margin: 0px;width: 102px;vertical-align: bottom;}
+.td4{border-top: #000000 1px solid;padding: 0px;margin: 0px;width: 546px;vertical-align: bottom;}
+.td5{border-top: #000000 1px solid;padding: 0px;margin: 0px;width: 30px;vertical-align: bottom;}
+.td6{padding: 0px;margin: 0px;width: 48px;vertical-align: bottom;}
+.td7{padding: 0px;margin: 0px;width: 24px;vertical-align: bottom;}
+.td8{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 546px;vertical-align: bottom;}
+.td9{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 78px;vertical-align: bottom;}
+.td10{padding: 0px;margin: 0px;width: 30px;vertical-align: bottom;}
+.td11{padding: 0px;margin: 0px;width: 498px;vertical-align: bottom;}
+.td12{padding: 0px;margin: 0px;width: 468px;vertical-align: bottom;}
+.td13{padding: 0px;margin: 0px;width: 132px;vertical-align: bottom;}
+.td14{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 576px;vertical-align: bottom;}
+.td15{padding: 0px;margin: 0px;width: 70px;vertical-align: bottom;}
+
+.tr0{height: 15px;}
+.tr1{height: 13px;}
+.tr2{height: 17px;}
+.tr3{height: 18px;}
+.tr4{height: 31px;}
+.tr5{height: 32px;}
+.tr6{height: 16px;}
+
+.t0{width: 597px;margin-left: 132px;margin-top: 8px;font: 13px 'Calibri';}
+.t1{width: 648px;margin-left: 84px;font: 13px 'Calibri';}
+.t2{width: 600px;margin-left: 132px;margin-top: 16px;font: 13px 'Calibri';}
+.t3{width: 600px;margin-left: 132px;margin-top: 17px;font: 12px 'Calibri';}
+.t4{width: 646px;margin-left: 84px;margin-top: 15px;font: bold 14px 'Calibri';}

@@ -3,16 +3,16 @@
 <head>
     <title>Vansi Vallabhaneni</title>
 	<link href="css/reset.css" type="text/css" rel="stylesheet" />
-	<link href="css/resume.css" type="text/css" rel="stylesheet" />
+	<link href="css/resume2.css" type="text/css" rel="stylesheet" />
 	<link href="css/styles.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 	<div class="unselectable" id="header">
 	<a class="navLink" href="#"><h1>Vansi</h1></a>
 	<div id="toolbar">
-		<a class="button navLink" href="#projects">Projects</a>
-		<a class="button navLink" href="#resume">Resume</a>
-		<a class="button navLink" href="#about">About</a>
+		<a class="button navLink" id="projectsButton" href="#projects">Projects</a>
+		<a class="button navLink" id="resumeButton" href="#resume">Resume</a>
+		<a class="button navLink" id="aboutButton" href="#about">About</a>
 	</div>
 	</div>
 	
@@ -22,7 +22,50 @@
 	</div>
 	
 	<div class="view viewStandard" id="resumeView">
-	Resume
+	<div id="resume">
+		<h3 class="sectionTitle">Education</h3>
+		<div class="sectionContent">
+			<div class="item">
+			<div class="itemTitle">
+				<h4 class="itemName itemTitleContents">Carnegie Mellon University</h4>
+				<p class="itemQuickDes itemTitleContents"></p>
+				<p class="itemLocation itemTitleContents">- Pittsburgh, PA</p>
+				<p class="itemDate itemTitleContents">December 2014</p>
+			</div>
+			<div class="itemContent">
+				<div class="subscript">
+					<p>Major: Computer Science</p>
+					<p>Minor: Mechanical Engineering</p>
+					<p>GPA: 3.54</p>
+				</div>
+				<ul class="itemNotes">
+					<li>
+						<span class="itemNotesTitle">Computer Science:</span>
+						Imperative Computation (Data Structures) (15-122), 
+						Intro to Computer Systems (15-213), Mobile Web Apps (15-237), 
+						Functional Programming (15-150)*, 
+						Parallel Computer Architecture (15-418)*
+					</li>
+					<li>
+						<span class="itemNotesTitle">Mechanical Engineering:</span>
+						Statics, Thermodynamics, Fluids, Stress Analysis
+					</li>
+					<li>
+						<span class="itemNotesTitle">Miscellaneous:</span>
+						Digital Photography, Intro to ECE, International Law, Intro to Robotics
+					</li>
+				</ul>
+				<div class="itemFooter">*currently enrolled</div>
+			</div>
+			</div>
+		</div>
+		
+		<h3 class="sectionTitle">Skills</h3>
+		<h3 class="sectionTitle">Experience</h3>	
+		<h3 class="sectionTitle">References</h3>	
+	</div>
+	
+	
 	<!--<a id="resumeDownload" href="data/Vansi Vallabhaneni- Online Resume.pdf">Download PDF</a>
 	<div id="resume">
 		<P class="p4 ft5"><SPAN class="ft4">EDUCATION</SPAN>__________________________________________________________________________________</P>

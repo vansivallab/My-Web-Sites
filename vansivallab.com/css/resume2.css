@@ -1,0 +1,49 @@
+
+#resume {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 125px;
+	padding-right: 10px;
+	background: url('cream_dust.png');
+	padding: 10px;
+	
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#resume * {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#resume .sectionTitle {
+	border-bottom: 1px solid;
+}
+
+#resume .sectionContent {
+	margin-left: 20px;
+}
+
+#resume .sectionContent .item .itemTitle * {
+	display: inline-block;
+}
+
+#resume .sectionContent .itemDate {
+	float: right;
+}
+
+#resume .sectionContent .itemContent .itemNotes{
+	display: inline-block;
+}
+
+#resume .sectionContent .itemContent .itemFooter{
+	float: right;
+}
+
+

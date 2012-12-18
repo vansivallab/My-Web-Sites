@@ -1,0 +1,146 @@
+/*styles.css*/
+*.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background: url('gray_jean.png');
+}
+
+h1 {
+	font-family: 'Cabin', sans-serif;
+    font-size: 2.5em;
+    color: #0174C6;
+	
+	text-shadow:0 -0.5px 0 rgba(0, 0, 0, 0.8), /* shadow */
+				0 1px 0 rgba(255, 255, 255, 0.5); /* highlight */
+}
+
+a {
+	text-decoration: none;
+}
+
+#header {
+	position: relative;
+	padding: 10px 0;
+	top: 25%;
+	
+	max-width:100em;
+	width: 62%;
+	min-width: 30em;
+	margin: 0 auto;
+	color: rgb(16,47,130);
+	
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#toolbar {
+    width: 20em;
+    margin: auto;
+    margin-top: 2em;
+	float: right;
+}
+
+#toolbar .button {
+	margin-right: 5px;
+    float: left;
+}
+
+.push_button{
+	position:relative;
+	width:100px;
+    display: inline-block;
+    color: #0174C6;
+	
+	margin:0 auto;
+	border-radius:5px;
+	border:solid 1px #D94E3B;
+	background:#F1F2F3;
+	text-align:center;
+    padding: 10px 12px;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	-webkit-box-shadow: 0px 9px 0px #84261a;
+        -moz-box-shadow: 0px 9px 0px #84261a;
+        box-shadow: 0px 9px 0px #84261a;
+}
+
+.push_button:active{
+    -webkit-box-shadow: 0px 2px 0px #84261a;
+    -moz-box-shadow: 0px 2px 0px #84261a;
+    box-shadow: 0px 2px 0px #84261a;
+    position:relative;
+    top:7px;
+}
+
+.button {
+    width: 100px;
+    display: inline-block;
+    padding: 10px 12px;
+    background-color: #F1F2F3;
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px #aaa;
+    font-weight: bold;
+    color: #0174C6;
+	
+	font-family: 'Cabin', sans-serif;
+    text-align: center;
+	
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+    background-color: #0174C6;
+    color: #ffffff;
+}
+
+.button:active {
+    /*position: relative;
+    top: 1px;*/
+    box-shadow: inset 0px 0px 6px #000000;        
+}
+
+.currViewButton {
+	box-shadow: inset 0px 0px 6px #000000;
+	background-color: #0174C6;
+    color: #ffffff;
+}
+
+.view {
+	top: 25px; /*changes dependent on header*/
+	width: 100%;
+	display: none;
+	overflow: auto;
+}
+
+.viewStandard {
+	max-width:100em;
+	width: 62%;
+	min-width: 30em;
+	margin: 0 auto;
+}

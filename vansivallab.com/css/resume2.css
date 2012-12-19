@@ -1,14 +1,13 @@
-
 #resume {
 	position: relative;
 	width: 100%;
-	margin: auto;
-	margin-top: 20px;
-	margin-bottom: 125px;
-	padding-right: 10px;
+	margin: 20px auto 75px auto;
+	padding: 20px;
 	background: url('cream_dust.png');
-	padding: 10px;
 	
+	font-family: 'Lato', sans-serif;
+	font-size: 10pt;
+		
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -24,26 +23,55 @@
 
 #resume .sectionTitle {
 	border-bottom: 1px solid;
+	margin-bottom: 1px;
+	font-weight: bold;
+	font-size: 10.5pt;
 }
 
 #resume .sectionContent {
 	margin-left: 20px;
+	font-size: 10pt;
+	margin-bottom: 15px;
+}
+
+#resume .sectionContent .item {
+	margin-bottom: 10px;
 }
 
 #resume .sectionContent .item .itemTitle * {
 	display: inline-block;
 }
 
-#resume .sectionContent .itemDate {
+#resume .sectionContent .item .itemTitle .itemQuickDes {
+	font-style: italic;
+}
+
+#resume .sectionContent .item .itemTitle .itemName {
+	font-weight: bold;
+}
+
+#resume .sectionContent .item .itemTitle .itemDate {
 	float: right;
 }
 
-#resume .sectionContent .itemContent .itemNotes{
+#resume .sectionContent .itemContent .itemNotes {
 	display: inline-block;
+	font-size: 9pt;
+	line-style: circle;
+}
+
+#resume .sectionContent .itemContent .itemNotesTitle {
+	font-weight: bold;
+}
+
+#resume .sectionContent .itemContent .subscript {
+	font-style: italic;
+	font-size: 9.5pt;
 }
 
 #resume .sectionContent .itemContent .itemFooter{
 	float: right;
+	font-size: 8pt;
 }
 
 

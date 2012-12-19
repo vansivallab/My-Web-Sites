@@ -132,10 +132,9 @@ a {
 }
 
 .view {
-	top: 25px; /*changes dependent on header*/
+	padding-top: 65px;
 	width: 100%;
 	display: none;
-	overflow: auto;
 }
 
 .viewStandard {

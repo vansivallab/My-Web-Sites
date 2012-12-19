@@ -35,7 +35,7 @@ a {
 
 #header {
 	position: relative;
-	padding: 10px 0;
+	padding: 15px 0;
 	top: 25%;
 	
 	max-width:100em;
@@ -60,34 +60,6 @@ a {
 #toolbar .button {
 	margin-right: 5px;
     float: left;
-}
-
-.push_button{
-	position:relative;
-	width:100px;
-    display: inline-block;
-    color: #0174C6;
-	
-	margin:0 auto;
-	border-radius:5px;
-	border:solid 1px #D94E3B;
-	background:#F1F2F3;
-	text-align:center;
-    padding: 10px 12px;
-	-webkit-transition: all 0.1s;
-	-moz-transition: all 0.1s;
-	transition: all 0.1s;
-	-webkit-box-shadow: 0px 9px 0px #84261a;
-        -moz-box-shadow: 0px 9px 0px #84261a;
-        box-shadow: 0px 9px 0px #84261a;
-}
-
-.push_button:active{
-    -webkit-box-shadow: 0px 2px 0px #84261a;
-    -moz-box-shadow: 0px 2px 0px #84261a;
-    box-shadow: 0px 2px 0px #84261a;
-    position:relative;
-    top:7px;
 }
 
 .button {
@@ -132,14 +104,22 @@ a {
 }
 
 .view {
-	padding-top: 65px;
+	margin-top: 80px;
 	width: 100%;
 	display: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px #aaa;
+	
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .viewStandard {
 	max-width:100em;
 	width: 62%;
 	min-width: 30em;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }

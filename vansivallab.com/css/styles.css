@@ -18,6 +18,7 @@ body {
 	height: 100%;
 	width: 100%;
 	background: url('gray_jean.png');
+	font-family: 'Cabin', sans-serif;
 }
 
 h1 {
@@ -60,6 +61,9 @@ a {
 #toolbar .button {
 	margin-right: 5px;
     float: left;
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-weight: 500;
+	font-size: 13pt;
 }
 
 .button {
@@ -72,7 +76,6 @@ a {
     font-weight: bold;
     color: #0174C6;
 	
-	font-family: 'Cabin', sans-serif;
     text-align: center;
 	
 	-webkit-box-sizing: border-box;
@@ -88,7 +91,7 @@ a {
 
 .button:hover {
     background-color: #0174C6;
-    color: #ffffff;
+    color: #F1F2F3;
 }
 
 .button:active {

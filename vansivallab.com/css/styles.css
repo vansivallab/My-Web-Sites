@@ -91,12 +91,22 @@ a {
 .button:hover {
     background-color: #0174C6;
     color: #F1F2F3;
+	
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .currViewButton {
-	box-shadow: inset 0px 0px 6px #000000;
+	box-shadow: inset 0px 0px 6px #444;
 	background-color: #0174C6;
     color: #ffffff;
+	
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .view {

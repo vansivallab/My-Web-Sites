@@ -17,13 +17,15 @@ html {
 body {
 	height: 100%;
 	width: 100%;
-	background: url('gray_jean.png');
+	background: url('retina_wood.png');
+	background: url('Wood_floor_by_gnrbishop.jpg');
 	font-family: 'Cabin', sans-serif;
 }
 
-h1 {
+#logo {
 	font-family: 'Cabin', sans-serif;
     font-size: 2.5em;
+	font-weight: 600;
     color: #0174C6;
 	
 	text-shadow:0 -0.5px 0 rgba(0, 0, 0, 0.8), /* shadow */

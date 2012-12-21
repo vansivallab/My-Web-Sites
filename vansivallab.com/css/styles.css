@@ -27,7 +27,7 @@ body {
 	font-family: 'Cabin', sans-serif;
     font-size: 2.5em;
 	font-weight: 600;
-    color: #0174C6;
+    color: #0063AB;
 	
 	text-shadow:0 -0.5px 0 rgba(0, 0, 0, 0.8), /* shadow */
 				0 1px 0 rgba(255, 255, 255, 0.5); /* highlight */
@@ -46,7 +46,6 @@ a {
 	width: 62%;
 	min-width: 30em;
 	margin: 0 auto;
-	color: rgb(16,47,130);
 	
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -76,7 +75,7 @@ a {
     background-color: #F1F2F3;
     border-radius: 3px;
     box-shadow: 1px 1px 6px #aaa;
-    color: #0174C6;
+    color: #0063AB;
 	
     text-align: center;
 	
@@ -92,7 +91,7 @@ a {
 }
 
 .button:hover {
-    background-color: #0174C6;
+    background-color: #0063AB;
     color: #F1F2F3;
 	
 	-webkit-transition: all 0.5s ease-in-out;
@@ -103,7 +102,7 @@ a {
 
 .currViewButton {
 	box-shadow: inset 0px 0px 6px #444;
-	background-color: #0174C6;
+	background-color: #0063AB;
     color: #ffffff;
 	
 	-webkit-transition: all 0.5s ease-in-out;

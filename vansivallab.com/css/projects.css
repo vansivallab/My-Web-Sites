@@ -1,0 +1,15 @@
+/*projects.css*/
+
+#projectView {
+  display: none;
+}
+
+#timeline {
+  width: 70%;
+  margin: auto;
+}
+
+.project {
+  padding: 2px;
+  background: blue;
+}

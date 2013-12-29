@@ -17,55 +17,24 @@ html {
 body {
 	height: 100%;
 	width: 100%;
-	background: url('retina_wood.png');
-	background: url('Wood_floor_by_gnrbishop.jpg');
 	font-family: 'Cabin', sans-serif;
 	color: #111111;
-}
-
-#logo {
-	font-family: 'Cabin', sans-serif;
-    font-size: 2.5em;
-	font-weight: 600;
-    color: #0063AB;
-	
-	text-shadow:0 -0.5px 0 rgba(0, 0, 0, 0.8), /* shadow */
-				0 1px 0 rgba(255, 255, 255, 0.5); /* highlight */
+  
+	background: url('cream_dust.png');
 }
 
 a {
 	text-decoration: none;
 }
 
-#header {
-	position: relative;
-	padding: 15px 0;
-	top: 25%;
+#logo {
+	font-family: 'Cabin', sans-serif;
+  font-size: 2.5em;
+	font-weight: 600;
+  color: #0063AB;
 	
-	max-width:100em;
-	width: 62%;
-	min-width: 30em;
-	margin: 0 auto;
-	
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-#toolbar {
-    width: 20em;
-    margin: auto;
-    margin-top: 2em;
-	float: right;
-}
-
-#toolbar .button {
-	margin-right: 5px;
-    float: left;
-	font-family: 'Carrois Gothic SC', sans-serif;
-	font-weight: 500;
-	font-size: 13pt;
+	text-shadow:0 -0.5px 0 rgba(0, 0, 0, 0.8), /* shadow */
+				0 1px 0 rgba(255, 255, 255, 0.5); /* highlight */
 }
 
 .button {
@@ -112,22 +81,13 @@ a {
 }
 
 .view {
-	margin-top: 80px;
 	width: 100%;
-	display: none;
-    border-radius: 3px;
-    box-shadow: 1px 1px 6px #aaa;
+  padding: 20px;
+  box-shadow: 0px 10px 6px -3px #aaa;
 	
 	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.viewStandard {
-	max-width:100em;
-	width: 62%;
-	min-width: 30em;
-	margin-left: auto;
-	margin-right: auto;
-}
